@@ -1,0 +1,148 @@
+
+/* Reinitialize CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-contact{
+    background: url(bg-01.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.contact-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+}
+
+.card-contact{
+    width: 790px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 72px 55px 90px;
+}
+.reservation-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 70px;
+    color: #333;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    width: 100%;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: #b1b1b1 2px solid;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+select{
+    width: 100%;
+    min-width: 150px;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: #b1b1b1 2px solid;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus{
+    border-bottom: #e91e63 2px solid;
+}
+
+input::placeholder{
+    color: #b1b1b1;
+}
+
+.adress-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.password-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.password-container div{
+    width: 100%;
+}
+input[type="submit"]{
+    width: 50%;
+    padding: 15px 0px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background: linear-gradient(-135deg,#d5007d,#e53935);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: auto;
+}
+
+input[type="submit"]:hover{
+    background: linear-gradient(-135deg,#e53935,#d5007d);
+}
+
+.erreur{
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px){
+    h2{
+        font-size: 2.5rem;
+    }
+    .card-contact{
+        width: 100%;
+        padding: 30px 20px 30px;
+    }
+    .reservation-form{
+        width: 100%;
+    }
+    .adress-container{
+        flex-direction: column;
+    }
+    .password-container{
+        flex-direction: column;
+    }
+    .password-container div{
+        width: 100%;
+    }
+    input[type="submit"]{
+        width: 100%;
+    }
+}
